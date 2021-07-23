@@ -1,5 +1,5 @@
 
-## AVERAGE: Automated Visualizing, Examining, Replacing, and Alerting of Genomic Errors.
+## AVERAGE: Automated Visualizing, Examining, Rechecking, and Alarming of Genomic Errors.
 
 <br/><br/>
 
