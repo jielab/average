@@ -1,9 +1,29 @@
 
-# AVERAGE: Automated Visualizing, Examining, Remapping, and Alerting of Genomic Errors.
+## AVERAGE: Automated Visualizing, Examining, Replacing, and Alerting of Genomic Errors.
 
-[NGS4THAL](https://www.researchsquare.com/article/rs-542196/v1) has two components:
-1. Realign_BAM, which realigns a BAM file, and generates a new BAM file.
-2. Talored_SV, which uses a bunch of existing SV tools to call SV.
+<br/><br/>
+
+> ## The problem is that currently genotype data is static   
+> - ### for rare and complex mutations such as that for Thalassemia, we need a system like the security check in the airport
+> - ### The luggage (genome) is put on a rotating belt, an automatic system is in place to visualize and alert.
+> - ### Security person (AVERAGE users) can also manusally examine and replace the luggage if they found something suspicious.
+
+![London-Eye](./images/security.gif)
+
+<br/><br/>  
+
+
+> ## Ideally, we could see the sequencing data like below
+> > - ### it is "graph-based". As we know, ACGT does not read well, and mutation is not simply single letter substitution.
+> > - ### it is good to have "head-to-head comparison"
+
+![ECG](./images/ecg.gif)
+
+<br/><br/>   
+
+> ## Right now, tools like [NGS4THAL](https://www.researchsquare.com/article/rs-542196/v1) aims to do the Bioinformatics part, in a "blackbox". However, 
+> - ### Realign_BAM, which realigns a BAM file, and generates a new BAM file.
+> - ### Talored_SV, which uses a bunch of existing SV tools to call SV.
 
 [github](https://github.com/JavenCao)
  
