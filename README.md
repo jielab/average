@@ -1,5 +1,5 @@
 
-## PIGEON: Practical Investigation of Genomic Errors by Obervation and Notification
+## PIGEON: Practical Investigation of Genomic Errors by Observation and Notification
 
 <br/><br/>
 
