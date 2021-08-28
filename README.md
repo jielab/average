@@ -1,5 +1,5 @@
 
-## AVERAGE: Automated Visualizing, Examining, Rechecking, and Alarming of Genomic Errors.
+## PIGEON: Practical Investigation of Genomic Errors by Obervation and Notification
 
 <br/><br/>
 
