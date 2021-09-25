@@ -3,34 +3,24 @@
 
 <br/><br/>
 
-> ## The problem is that currently genotype data is static   
-> - ### for rare and complex mutations such as that for Thalassemia, we need a system like the security check in the airport
-> - ### The luggage (genome) is put on a rotating belt, an automatic system is in place to visualize and alert.
-> - ### Security person (AVERAGE users) can also manusally examine and replace the luggage if they found something suspicious.
+> ## The problem is that genome sequencing data is still only understandable by professional.   
+> - ### Take Thalassemia for example, which has well-established causal genes. There is still no good tool for us to screen for mutations, conveniently and reliably.
+> - Although there is a preprint [NGS4THAL, a one-stop molecular diagnosis and carrier screening tool for thalassemia and other hemoglobinopathies by next-generation sequencing](https://www.researchsquare.com/article/rs-542196/v1), I personally feel that it is still not user-friendly and practically adoptable to be a "one-stop" tool.
 
-![London-Eye](./images/security.gif)
+> - I don't feel comfortable to use its [Realign_BAM](https://github.com/JavenCao) module, since alignment tools including BWA and GATK have been used by the international community for so long and are continuing getting improved. Plus, it is still something run in a black box.
+> - Its "Talored_SV" module is not easy to implement or convincing either, which simply combines a bunch of existing SV tools. 
+
+> - Instead, we need to build something transparent and usable so that public health practitioners could get better involved in screening for genetic mutations for thalassemia, we need a system like that used for security check in the airport
+> - ### In the airport security check system, the luggage (analogy for genome) is put on a rotating belt, an automatic system is in place to visualize what is inside and send an alert when it detects something suspicious.
+> - ### Then, security staff (analogy for public health practitioners or genetic counselors) could manually examine by openning the luggage and poking things around.
+
+![security](./images/security.gif)
 
 <br/><br/>  
 
 
-> ## Ideally, we could see the sequencing data like below
-> > - ### it is "graph-based". As we know, ACGT does not read well, and mutation is not simply single letter substitution.
-> > - ### it is good to have "head-to-head comparison"
+> ## We need something automatic moving along, like below:
 
 ![ECG](./images/ecg.gif)
 
 <br/><br/>   
-
-> ## Right now, tools like [NGS4THAL](https://www.researchsquare.com/article/rs-542196/v1) aims to do the Bioinformatics part, in a "blackbox". However, 
-> - ### Realign_BAM, which realigns a BAM file, and generates a new BAM file.
-> - ### Talored_SV, which uses a bunch of existing SV tools to call SV.
-
-[github](https://github.com/JavenCao)
- 
-It not “a one-stop molecular diagnosis and carrier screening tool for thalassemia” yet. 
-It is debatable that “Realigh_BAM” could do a better job than BWA and GATK, which has been used by the international community for so long. 
-Also, this NGS4THAL is NOT user-friendly, especially in community and clinical setting. 
-Users do not know what is and how to manipulate huge BAM files.
- 
-We write some small external scripts to call IGV to load the genome and roll it at certain speed.
-Then we add more scripts to evaluate and remapp potential structural variants (of the HB genes for Thalassemia), and set an alarm just like the sound beeping at the airport Baggage screening monitoring system.
