@@ -14,14 +14,12 @@
 > - ### In the airport security check system, the luggage (analogy for genome) is put on a rotating belt, an automatic system is in place to visualize what is inside and send an alert when it detects something suspicious. Then, security staff (analogy for public health practitioners or genetic counselors) could manually examine by openning the luggage and poking things around.
 
 > - ### Similary, the core philosophy of PIGEON is that it enables "manual observation" (by security staff) and "automatic notification" (by computational algorithm). 
-> - ### During the old war time, Pigeon has been used to deliver secret messages. In the modern era, Pigeon is a symbol for peace. Bringing secret genomic result to potential patients, and also give them a peaceful mind (for family planing for example), is the mission of the PIGEON system that we are going to develop.  
+> - _During the old war time, Pigeon has been used to deliver secret messages. In the modern era, Pigeon is a symbol for peace. Bringing secret genomic result to potential patients, and also give them a peaceful mind (for family planing for example), is the mission of the PIGEON system that we are going to develop._
 
 ![security](./images/security.gif)
 
 <br/><br/>  
 
-
-> ## We need something automatic moving along, like below:
 
 ![ECG](./images/ecg.gif)
 
